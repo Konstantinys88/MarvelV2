@@ -1,0 +1,40 @@
+@import "./variables.scss"; 
+
+.btns {
+    width: 101px;
+    height: 38px;
+    text-align: center;
+    padding: 11px;
+    background: linear-gradient(135deg, transparent 10px, #5C5C5C 0) top left,
+    linear-gradient(-45deg, transparent 10px, #5C5C5C 0) bottom right;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    &:hover {
+        background: linear-gradient(135deg, transparent 10px, $red 0) top left,
+        linear-gradient(-45deg, transparent 10px, $red 0) bottom right;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+    }
+    a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    button {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        cursor: pointer;
+    }
+}
